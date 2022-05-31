@@ -1,6 +1,6 @@
 const controller = {}
 
-controller.index = (req,res) => res.sender('index', {title: 'Festa do Caique'})
+controller.index = (req,res) => res.render('index', {title: 'Festa do Thiago'})
 
 
 module.exports = controller 

@@ -25,6 +25,7 @@ const convidadoNovo = {
     ...req.body
 }
 
+console.log({convidadoNovo})
 const convidadosAtualizados = [...convidados, convidadoNovo]
 fs.writeFileSync(
     path.join(__dirname, '../data/convidados.json'),
@@ -33,12 +34,8 @@ fs.writeFileSync(
 )
 
 
-
-
-
-
-    res.render('adicionar-convidado', {
-    title: 'Adicionar Convidados'
+    res.render('sucesso', {
+    title: 'Convidado(s) ${convidadoNovo.nome} adicionado(s) com sucesso!'
 })
 }
 

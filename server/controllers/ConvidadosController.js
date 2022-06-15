@@ -35,7 +35,7 @@ fs.writeFileSync(
 
 
     res.render('sucesso', {
-    title: 'Convidado(s) ${convidadoNovo.nome} adicionado(s) com sucesso!'
+    title: `Convidado(s) ${convidadoNovo.nome} adicionado(s) com sucesso!`
 })
 }
 
